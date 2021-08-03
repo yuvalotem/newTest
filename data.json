@@ -1,0 +1,22 @@
+{
+  "user": {
+   "firstName": "Yuval",
+    "lastName": "Lotem",
+    "email": "yuvalotem@gmail.com",
+  "birthDate": "24/04/1997"
+  },
+  "friends": [
+    {
+    "firstName": "Josh",
+    "lastName": "Kerr",
+    "email": "Josh1212@gmail.com",
+    "birthDate": "21/07/1995"
+    },
+    {
+      "firstName": "Ido",
+      "lastName": "Cohen",
+      "email": "ido1212@gmail.com",
+      "birthDate": "25/01/1997"
+    }
+  ]
+}

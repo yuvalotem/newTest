@@ -16,12 +16,7 @@ const Login = ({ navigation }) => {
     <Button
     title="Sign In"
     style={styles.signInButton}
-    onPress={() => navigation.navigate('Home')}/>
-    <Button
-    title="Don't have an account yet? Sign Up"
-    color="#b2bec3"
-    onPress={() => navigation.navigate('SignUp')}
-    style={styles.signUpButton}/>
+    onPress={() => navigation.navigate('Profile')}/>
    </View>
   );
 };
