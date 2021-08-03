@@ -20,10 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94f2bfd8-b12f-4206-9ba0-9e5241d86743" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Friends.js" beforeDir="false" afterPath="$PROJECT_DIR$/Friends.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>

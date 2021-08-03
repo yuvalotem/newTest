@@ -10,13 +10,13 @@
     "firstName": "Josh",
     "lastName": "Kerr",
     "email": "Josh1212@gmail.com",
-    "birthDate": "21/07/1995"
+    "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FM%2FMV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY%40._V1_.jpg&imgrefurl=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0108778%2F&tbnid=QtYpqfa2ODGk-M&vet=12ahUKEwi2ubSXg5XyAhUBnRoKHRkbDA0QMygAegUIARCtAQ..i&docid=OXs4KB9tMx4sIM&w=680&h=1000&q=friends&ved=2ahUKEwi2ubSXg5XyAhUBnRoKHRkbDA0QMygAegUIARCtAQ"
     },
     {
       "firstName": "Ido",
       "lastName": "Cohen",
       "email": "ido1212@gmail.com",
-      "birthDate": "25/01/1997"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd40z4UmzJdUlRHBewukDdELog71TjfX271w&usqp=CAU"
     }
   ]
 }

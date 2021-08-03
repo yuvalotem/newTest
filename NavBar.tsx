@@ -17,7 +17,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const NavBar = () => {
+const NavBar = ({ navigation }) => {
 
   return (
   <View View style={styles.container}>
@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
       navButton: {
+             margin: 50,
              height: 20,
              width: 40,
              borderColor: 'gray',

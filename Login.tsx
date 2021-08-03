@@ -16,7 +16,7 @@ const Login = ({ navigation }) => {
     <Button
     title="Sign In"
     style={styles.signInButton}
-    onPress={() => navigation.navigate('Profile')}/>
+    onPress={() => navigation.navigate('Friends')}/>
    </View>
   );
 };

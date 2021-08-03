@@ -16,12 +16,21 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const Friends = () => {
+import data from './data.json';
+import NavBar from './NavBar';
+
+const Profile = () => {
+
   return (
   <View View style={styles.container}>
-    <View style={styles.header}><Text style={styles.headline}>Hello Yuval,</Text></View>
-    <View style={styles.flights}><Text style={styles.boxHeader}>Open flights</Text></View>
-    <View style={styles.exchanges}><Text style={styles.boxHeader}>Open exchanges</Text></View>
+  <NavBar />
+    <View style={styles.header}><Text style={styles.headline}>Hello {data.user.firstName}</Text></View>
+    <View style={styles.body}><Text style={styles.boxHeader}>
+    Full Name: {data.user.firstName + data.user.lastName}
+    email: {data.user.email}
+    Birth Date: {data.user.birthDate}
+    </Text>
+    </View>
   </View>
   );
 };
@@ -43,14 +52,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: 'black',
     },
-  flights: {
-        backgroundColor: "#81ecec",
-        flex: 3,
-        width: "95%",
-        margin: 10,
-        borderRadius: 10
-  },
-   exchanges: {
+   body: {
           backgroundColor: "#fdcb6e",
           flex: 2,
           width: "95%",
@@ -64,4 +66,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default Friends;
+export default Profile;

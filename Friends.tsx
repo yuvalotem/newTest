@@ -6,6 +6,7 @@ import {
   View,
   Text,
   StatusBar,
+  Image
 } from 'react-native';
 
 import {
@@ -16,25 +17,27 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import data from './data.json';
 import NavBar from './NavBar';
+import data from './data.json';
 
-const Profile = () => {
-const firstName = 'Yuval';
-const lastName = 'Lotem';
-const email = 'yuvalotem@gmail.com';
-const birthDate = "24/04/1997";
-
+const Friends = () => {
   return (
   <View View style={styles.container}>
-  <NavBar />
-    <View style={styles.header}><Text style={styles.headline}>Hello {firstName}</Text></View>
-    <View style={styles.body}><Text style={styles.boxHeader}>
-    Full Name: {firstName + lastName}
-    email: {email}
-    Birth Date: {birthDate}
-    </Text>
+    <NavBar/>
+    <View style={styles.header}><Text style={styles.headline}>Hello {data.user.firstName}</Text></View>
+    {data.friends.map(f=>{
+    return(
+    <View key={f.email} style={styles.friends}>
+    <Image
+        style={styles.photo}
+        source={{
+          uri: f.image,
+        }}
+          />
+    <Text style={styles.boxHeader}>{f.firstName + " " + f.lastName}</Text>
     </View>
+    )})}
+
   </View>
   );
 };
@@ -56,18 +59,22 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: 'black',
     },
-   body: {
-          backgroundColor: "#fdcb6e",
-          flex: 2,
-          width: "95%",
-          margin: 10,
-          borderRadius: 10
-    },
+  friends: {
+        backgroundColor: "#81ecec",
+        flex: 3,
+        width: "95%",
+        margin: 10,
+        borderRadius: 10
+  },
     boxHeader:{
         color:'white',
         alignSelf:'center',
         fontSize: 20
-    }
+    },
+      photo: {
+        width: 100,
+        height: 100,
+      },
 });
 
-export default Profile;
+export default Friends;
