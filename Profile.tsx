@@ -25,11 +25,10 @@ const Profile = () => {
   <View View style={styles.container}>
   <NavBar />
     <View style={styles.header}><Text style={styles.headline}>Hello {data.user.firstName}</Text></View>
-    <View style={styles.body}><Text style={styles.boxHeader}>
-    Full Name: {data.user.firstName + data.user.lastName}
-    email: {data.user.email}
-    Birth Date: {data.user.birthDate}
-    </Text>
+    <View style={styles.body}>
+    <Text style={styles.boxHeader}>Full Name: {data.user.firstName + " " + data.user.lastName}</Text>
+    <Text style={styles.boxHeader}>email: {data.user.email}</Text>
+    <Text style={styles.boxHeader}>Birth Date: {data.user.birthDate}</Text>
     </View>
   </View>
   );

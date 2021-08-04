@@ -3,16 +3,16 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import Login from './Login'
 import Profile from './Profile'
 import Friends from './Friends'
+import NavBar from './NavBar'
 
-const Stack = createNativeStackNavigator();
+const Stack = createStackNavigator();
 export default function App() {
   return (
-    <View style={styles.container}>
                 <NavigationContainer>
                   <Stack.Navigator initialRouteName="Login">
                     <Stack.Screen name="Login" component={Login} />
@@ -20,7 +20,6 @@ export default function App() {
                     <Stack.Screen name="Profile" component={Profile} />
                   </Stack.Navigator>
                 </NavigationContainer>
-    </View>
   );
 }
 

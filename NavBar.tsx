@@ -17,8 +17,10 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const NavBar = ({ navigation }) => {
+import { useNavigation } from '@react-navigation/native';
 
+const NavBar = () => {
+const navigation = useNavigation();
   return (
   <View View style={styles.container}>
   <Button
@@ -38,11 +40,13 @@ const styles = StyleSheet.create({
     container:{
         backgroundColor: "#dfe6e9",
         flex: 1,
-        flexDirection:"column",
-        justifyContent: 'center',
+        flexDirection:"row",
+        justifyContent: 'space-between',
         alignItems: 'center',
     },
       navButton: {
+             flex: 1,
+             padding: 50,
              margin: 50,
              height: 20,
              width: 40,
